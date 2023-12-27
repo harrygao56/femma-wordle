@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Femma Wordle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wordle-container">
+    <div>
+      <h1>Femma Wordle</h1>
+      <h4>It's like Wordle, but Femma</h4>
+    </div>
+    <div id="word-display"></div>
+    <input type="text" id="guess-input" placeholder="Enter your guess">
+    <div>
+      <button onclick="checkGuess()">Submit</button>
+      <button onclick="reset()">New Word</button>
+    </div>
+    <p id="signoff">To Emma, from Harry</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
