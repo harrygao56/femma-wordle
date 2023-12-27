@@ -1,6 +1,6 @@
 const words = ["femma", "funny", "silly", "weird", "peanut", "nuts", "ballet", "mojo", "yoshi", "nerd", "washu", "dsp", "ocd", "bitch", "wine", "cheese"];
-// const selectedWord = words[Math.floor(Math.random() * words.length)];
-const selectedWord = "bonsai";
+const selectedWord = words[Math.floor(Math.random() * words.length)];
+// const selectedWord = "bonsai";
 
 // Set max length of text input
 document.getElementById('guess-input').setAttribute("maxlength", selectedWord.length);
