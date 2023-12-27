@@ -51,7 +51,7 @@ function checkGuess() {
 
     displayWord();
 
-    if (selectedWord === guessValue) {
+    if (selectedWord === guess) {
       alert("Congratulations! You guessed the word!");
     }
 
