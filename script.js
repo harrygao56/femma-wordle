@@ -1,8 +1,9 @@
 const words = ["femma", "funny", "silly", "weird", "peanut", "nuts", "ballet", "mojo", "yoshi", "nerd", "washu", "dsp", "ocd", "bitch", "wine", "cheese"];
-const selectedWord = words[Math.floor(Math.random() * words.length)];
+// const selectedWord = words[Math.floor(Math.random() * words.length)];
+const selectedWord = "bonsai";
 
 // Set max length of text input
-document.getElementById('guess-input').setAttribute("maxlength", selectedWord.length)
+document.getElementById('guess-input').setAttribute("maxlength", selectedWord.length);
 
 // Array of the current state of the guessed word
 // Each int corresponds to a letter, with:
@@ -12,6 +13,7 @@ document.getElementById('guess-input').setAttribute("maxlength", selectedWord.le
 var guessCorrectness = new Array(selectedWord.length).fill(0);
 var guess = new Array(selectedWord.length + 1).join(" ");
 
+// Function to display guesses
 function displayWord() {
   var wordDisplay = document.getElementById("word-display");
   var displayString = "<div class=\"guess\">";
@@ -30,6 +32,7 @@ function displayWord() {
   wordDisplay.innerHTML += displayString;
 }
 
+// Function to check correctness of a submitted guess
 function checkGuess() {
   const guessInput = document.getElementById("guess-input");
   var guessValue = guessInput.value;
@@ -62,6 +65,7 @@ function checkGuess() {
   }
 }
 
+// Function to reset wordle
 function reset() {
   location.reload();
 }
