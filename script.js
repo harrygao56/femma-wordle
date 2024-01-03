@@ -1,4 +1,5 @@
-const words = ["femma", "funny", "silly", "weird", "peanut", "nuts", "ballet", "mojo", "yoshi", "nerd", "washu", "dsp", "ocd", "bitch", "wine", "cheese"];
+// const words = ["femma", "funny", "silly", "weird", "peanut", "nuts", "ballet", "mojo", "yoshi", "nerd", "washu", "dsp", "ocd", "bitch", "wine", "cheese"];
+const words = ["olin", "pets", "florida", "weezer", "nirvana", "music", "rock", "drums", "pixies", "writing", "dance", "penis", "tequila", "books", "stl"]
 const selectedWord = words[Math.floor(Math.random() * words.length)];
 // const selectedWord = "bonsai";
 
